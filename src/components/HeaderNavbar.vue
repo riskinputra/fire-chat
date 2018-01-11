@@ -5,7 +5,7 @@
     <v-toolbar-side-icon class="hidden-md-and-up"></v-toolbar-side-icon>
     <v-toolbar-items id="nav-list" v-for="item in menuItems" :key="item.title">
       <v-btn flat :key="item.title" :to="item.route">
-        <v-icon>{{ item.icon }}</v-icon>&nbsp; 
+        <v-icon>{{ item.icon }}</v-icon>&nbsp;
         <div class="hidden-xs-only">{{ item.title }}</div>
       </v-btn>
     </v-toolbar-items>

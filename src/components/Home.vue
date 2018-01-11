@@ -6,6 +6,7 @@
         <section id="home-content">
           <v-layout row wrap>
             <v-flex xs12>
+              <chats></chats>
               <router-view/>
             </v-flex>
           </v-layout>
@@ -17,9 +18,11 @@
 
 <script>
 import HeaderNavbar from './HeaderNavbar'
+import Chats from './Chat'
 
 export default {
   components: {
+    'chats': Chats,
     'header-navbar': HeaderNavbar
   },
   data () {

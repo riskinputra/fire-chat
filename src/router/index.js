@@ -13,30 +13,29 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Home,
-      children: [
-        {
-          path: '/login',
-          name: 'Login',
-          component: Login
-        },
-        {
-          path: '/register',
-          name: 'Register',
-          component: Register
-        },
-        {
-          path: '/chat/:id',
-          name: 'Chat',
-          component: Chat,
-          props: true
-        },
-        {
-          path: '/create',
-          name: 'CreateChat',
-          component: CreateChat
-        }
-      ]
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register
+    },
+    {
+      path: '/chat/:id',
+      name: 'Chat',
+      component: Chat,
+      props: true
+    },
+    {
+      path: '/create',
+      name: 'CreateChat',
+      component: CreateChat
     }
   ]
 })

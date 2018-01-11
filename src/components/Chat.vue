@@ -1,5 +1,7 @@
 <template>
-  <h1>Chat</h1>
+  <v-list subheader>
+    <v-subheader>Recent Chats</v-subheader>
+  </v-list>
 </template>
 
 <script>
